@@ -1,0 +1,39 @@
+.cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transofm 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.side {
+    height: 95px;
+    position: absolute;
+    width: 95px;
+}
+.top {
+    background-color: #00b100;
+    transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.left {
+    background-color: green;
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+
+}
+
+.right {
+    background-color: #006200;
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}
+p {
+    font-size: x-large;
+    text-align: center;
+    color: lavenderblush;
+}
+
+.cube:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

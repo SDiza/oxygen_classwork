@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url("src/icons.gif") no-repeat;
+
+}
+
+.open .icon {
+    background-position: 0 -16px;
+    cursor: pointer;
+}
+
+.closed .icon {
+    background-position: 0 0;
+    cursor: pointer;
+}
+.leaf .icon {
+    background-position: 0 -32px;
+    cursor: text;
+}
