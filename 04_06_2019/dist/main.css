@@ -1,0 +1,8 @@
+body {
+  background-color: #9d7746; }
+  body ul {
+    background-color: red; }
+    body ul li {
+      color: aqua; }
+      body ul li a {
+        color: #9d7746; }

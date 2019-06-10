@@ -1,2 +1,14 @@
 @import "src/variables";
 
+body {
+  background-color: $second-color;
+  ul {
+    background-color: red;
+    li {
+      color: aqua;
+      a {
+        color: $second-color;
+      }
+    }
+  }
+}
