@@ -6,14 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    <script src="jquery-3.4.1.min.js"></script>
 </head>
 <body>
-<input type="text" value="5">
-<script>
-    var elem = document.querySelectorAll('input')[0];
-    elem.value = 'red';
-    elem.style.backgroundColor = 'red';
+<ul style="opacity: 0">
+    <li>JS</li>
+    <li>C++</li>
+    <li>C#</li>
+</ul>
+
+<button id="show">показать</button>
+<script type="text/javascript">
+    $(function () {
+        $('button#show').click(function () {
+            $('ul').fadeTo(2000, 0.6);
+        });
+    });
 </script>
 </body>
 </html>
